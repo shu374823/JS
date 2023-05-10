@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="myH3">
+        Hello 
+    </h3>
+    <form action="#">
+        <label for="name-id">name ：</label>
+        <input type="text" name="name-name" id="name-id">
+        <br>
+        <label for="mobile-id">mobile：</label>
+        <input type="text" name="mobile-name" id="mobile-id">
+        <br>
+        <button type="button" onclick="inputNameMobileValue()">取得輸入資料</button>
+    </form>
+    <hr>
+    <p id="result">結果是..........</p>
+    
+    <script>
+        let name= 'miles';
+        let mobile= '0912345678';
+        let myString= `Hello ${name}, mobile= ${mobile}`;
+        console.log(myString);
+        // 更改<H3 id="myH3">中的文字
+        document.getElementById('myH3').innerText= myString;
+        
+        // 字串相加用“+”
+        let t= 'test';
+        let t1= "test1";
+        let newString= t+t1;
+        // 字串加變數
+        let String= `hello ${t1}`+t;
+        console.log(t);
+        console.log(t1);
+        console.log(newString);
+        console.log(String);
+        // 取得輸入資料
+        let inputName= document.getElementById('name-id').value;
+        let inputMobile= document.getElementById('mobile-id').value;
+        
+        function inputNameMobileValue() {
+            
+        }
+        document.getElementById('result').innerText= myString;
+    </script>
+</body>
+</html>
