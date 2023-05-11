@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS stringToNumber</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>JS stringToNumber</h3>
+    <label for="A">請輸入數字 ：</label>
+    <input type="text" id="A"><br><br>
+    <label for="B">請輸入文字 ：</label>
+    <input type="number" id="B"><br><br>
+    <button id="BTN" onclick="calc()">合倂計算</button>
+    <p id="result">計算結果 :</p>
+
+
+    <script>
+        let A= document.getElementById('A');
+        let B= document.getElementById('B');
+
+        function calc() {
+            let AText= A.value;
+            let BNumber= B.value;
+            let c= Number(AText) +  Number(BNumber);
+            console.log(c)
+            result.innerText = `計算結果是 : ${c}`;
+        }
+    </script>
+</body>
+</html>
